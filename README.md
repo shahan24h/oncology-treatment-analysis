@@ -1,14 +1,14 @@
-# 🚀 Cancer Treatment Pathway Analysis & Risk Prediction
+# Cancer Treatment Pathway Analysis & Risk Prediction
 
 A machine learning pipeline for healthcare risk prediction using CMS Medicare Claims Data on Databricks.
 
 ---
 
-## 👤 Author
+## Author
 **Shahan**  
 _Data Scientist | ML Engineer_
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Platform**: Databricks (Community Edition)
 - **Data Processing**: PySpark, Delta Lake
 - **ML Framework**: scikit-learn
@@ -17,12 +17,12 @@ _Data Scientist | ML Engineer_
 
 ---
 
-## 📚 Project Overview
+##  Project Overview
 This project demonstrates an end-to-end ML workflow for predicting high-risk cancer patients using real-world healthcare claims data. All steps adhere to production best practices and clinical relevance, with full experiment tracking and data governance built in.
 
 ---
 
-## 💡 Business Problem & Solution
+##  Business Problem & Solution
 - **Problem**: Healthcare providers need to identify high-risk cancer patients at diagnosis for:
   - Effective resource allocation
   - Early intervention
@@ -32,7 +32,7 @@ This project demonstrates an end-to-end ML workflow for predicting high-risk can
 
 ---
 
-## 🎯 Key Results
+## Key Results
 | Metric      | Value    | Interpretation                                                 |
 |-------------|----------|--------------------------------------------------------------|
 | Accuracy    | 93.15%   | Correctly identifies 93% of patients                         |
@@ -45,7 +45,7 @@ This project demonstrates an end-to-end ML workflow for predicting high-risk can
 
 ---
 
-## 🗺️ Architecture & Pipeline
+## Architecture & Pipeline
 
 ### Medallion Architecture (Delta Lake)
 ```mermaid
@@ -61,7 +61,7 @@ flowchart TD
 
 ---
 
-## 📦 Dataset
+##  Dataset
 - **Source**: CMS Medicare Claims Synthetic Public Use Files (DE-SynPUF)
 - **Components**:
   - Beneficiary Summary File (demographics/chronic conditions)
@@ -73,7 +73,7 @@ flowchart TD
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 ```text
 oncology-treatment-analysis/
 ├── 00_project_config/
@@ -94,7 +94,7 @@ oncology-treatment-analysis/
 
 ---
 
-## ⚠️ Data Leakage Detection & Resolution
+##  Data Leakage Detection & Resolution
 - **Problem**: Unrealistic 100% accuracy caused by outcome-based features (cost, length of stay).
 - **Solution**:
   - Removed all outcome/time-dependent variables.
@@ -103,7 +103,7 @@ oncology-treatment-analysis/
 
 ---
 
-## 🧩 Features Used (No Data Leakage)
+##  Features Used (No Data Leakage)
 | Category      | Features                                     |
 |--------------|----------------------------------------------|
 | Demographics  | Age, gender, race                            |
@@ -111,7 +111,7 @@ oncology-treatment-analysis/
 | Temporal      | Admission year, month, quarter               |
 | History       | Prior claims, patient complexity             |
 
-- ❌ No cost, length of stay, or post-admission features
+-  No cost, length of stay, or post-admission features
 
 ---
 
@@ -128,7 +128,7 @@ _All experiments tracked in MLflow_
 
 ---
 
-## 🚦 How To Run
+##  How To Run
 1. **Prerequisites**:
     - [ ] Databricks account (Community Edition okay)
     - [ ] Download CMS Medicare synthetic data
@@ -146,7 +146,7 @@ _All experiments tracked in MLflow_
 
 ---
 
-## 🧑‍⚕️ Business Impact
+##  Business Impact
 - **Resource Optimization**: Allocate specialists to those who need it most
 - **Outcome Improvement**: No malignant cases missed (100% recall)
 - **Cost Efficiency**: Proactive intervention = reduced downstream costs
@@ -154,7 +154,7 @@ _All experiments tracked in MLflow_
 
 ---
 
-## 🚀 Future Roadmap
+##  Future Roadmap
 ### Model
 - Hyperparameter tuning and cross-validation
 - SHAP for explainability
@@ -172,14 +172,14 @@ _All experiments tracked in MLflow_
 
 ---
 
-## 💎 Key Takeaways
+##  Key Takeaways
 - **ML Best Practices**: No data leakage, model interpretability, experiment tracking
 - **Healthcare Domain**: ICD-9 coding, clinical relevance, outcome-first care
 - **Engineering Excellence**: Scalable, modular, production-grade architecture
 
 ---
 
-## 📬 Contact
+##  Contact
 **Shahan**  
 _Data Scientist | ML Engineer_
 
